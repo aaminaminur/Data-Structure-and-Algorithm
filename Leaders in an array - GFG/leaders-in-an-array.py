@@ -9,7 +9,8 @@ class Solution:
         for i in range(N-1, -1, -1):
             if A[i] >= curr_max:
                 curr_max = A[i]
-                res.insert(0, curr_max)
+                res.append(curr_max)
+        res.reverse()
         return res
 
 
